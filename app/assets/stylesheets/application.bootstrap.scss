@@ -1,0 +1,15 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+body {
+    color: black;
+}
+
+.navbar, .nav-link {
+    background-color: #703585 !important;
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}

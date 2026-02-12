@@ -1,0 +1,40 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Upcoming Events</h1>
+
+<% if @events.present? %>
+  <div id="events">
+    <% @events.each do |event| %>
+      <div class="card">
+        <p>
+          <strong>Title:</strong>
+          <%= event.title %>
+        </p>
+
+        <p>
+          <strong>Start time:</strong>
+          <%= event.start_time.strftime("%A, %B %d, %Y at %I:%M %p") %>
+        </p>
+
+        <p>
+          <strong>End time:</strong>
+          <%= event.end_time.strftime("%A, %B %d, %Y at %I:%M %p") %>
+        </p>
+
+        <% if event.location.present? %>
+          <p>
+            <strong>Location:</strong>
+            <%= event.location %>
+          </p>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+<% if @events.empty? %>
+  <div id="events">
+    There are no events to show.
+  </div>
+<% end %>
+

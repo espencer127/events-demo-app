@@ -1,0 +1,45 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Upcoming Events</h1>
+
+<div id="events">
+  <% @events.each do |event| %>
+    <div class="card">
+    <p>
+      <strong>Title:</strong>
+      <%= event.title %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= event.description %>
+    </p>
+
+    <p>
+      <strong>Start time:</strong>
+      <%= event.start_time.strftime("%A, %B %d, %Y at %I:%M %p") %>
+    </p>
+
+    <p>
+      <strong>End time:</strong>
+      <%= event.end_time.strftime("%A, %B %d, %Y at %I:%M %p") %>
+    </p>
+
+    <p>
+      <strong>Location:</strong>
+      <%= event.location %>
+    </p>
+
+    <p>
+      <strong>Published:</strong>
+      <%= event.published %>
+    </p>
+    <p>
+      <%= link_to "Toggle event's published status", toggle_published_event_path(event) %> |
+      <%= link_to "Show this event", event %>
+    </p>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "New event", new_event_path %>
