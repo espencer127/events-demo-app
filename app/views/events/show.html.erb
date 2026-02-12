@@ -4,7 +4,7 @@
 
 <div>
   <%= link_to "Edit this event", edit_event_path(@event) %> |
-  <%= link_to "Back to events", root_path %>
+  <%= link_to "Back to events", admin_index_path %>
 
   <%= button_to "Destroy this event", @event, method: :delete %>
 </div>

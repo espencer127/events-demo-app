@@ -44,7 +44,7 @@ class EventsController < ApplicationController
     @event.destroy!
 
     respond_to do |format|
-      format.html { redirect_to root_path, notice: "Event was successfully destroyed.", status: :see_other }
+      format.html { redirect_to admin_index_path, notice: "Event was successfully destroyed.", status: :see_other }
       format.json { head :no_content }
     end
   end
@@ -53,7 +53,7 @@ class EventsController < ApplicationController
     @event.toggle(:published).save
 
     respond_to do |format|
-      format.html { redirect_to root_path, notice: "Event was successfully updated.", status: :see_other }
+      format.html { redirect_to admin_index_path, notice: "Event was successfully updated.", status: :see_other }
       format.json { head :no_content }
     end
   end

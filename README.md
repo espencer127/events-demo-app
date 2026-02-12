@@ -5,20 +5,15 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+## Ruby version
 
-* System dependencies
+* Ruby: 3.3.6
+* Rails: 7.1.6
 
-* Configuration
+## How do I run this app?
 
-* Database creation
+clone the code locally then run `bin/rails server`
 
-* Database initialization
+## Trade-offs
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This app was written within the 2-3hr timeframe. With more time, I would have started tackling the mentioned bonus items.

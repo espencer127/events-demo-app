@@ -1,10 +1,16 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Upcoming Events</h1>
+<h1>All Events</h1>
+
+<div class="container text-center">
+  <button class="button p-2 mx-auto">
+    <%= link_to "New event", new_event_path %>
+  </button>
+</div>
 
 <div id="events">
   <% @events.each do |event| %>
-    <div class="card">
+    <div class="card m-5">
     <p>
       <strong>Title:</strong>
       <%= event.title %>
@@ -41,5 +47,3 @@
     </div>
   <% end %>
 </div>
-
-<%= link_to "New event", new_event_path %>
