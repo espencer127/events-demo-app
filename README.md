@@ -10,7 +10,7 @@
 * Clone the code locally 
 * Run `bin/rails db:migrate`
 * Run `bundle install --gemfile /.../events-demo-app/Gemfile`
-* Run `rails assets:precompile`
+* Run `bin/rails assets:precompile`
 * Run `bin/rails server`
 
 The app will be served on `http://localhost:3000/`
