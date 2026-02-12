@@ -1,9 +1,4 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+# Events-Demo-App
 
 ## Ruby version
 
@@ -12,8 +7,14 @@ Things you may want to cover:
 
 ## How do I run this app?
 
-clone the code locally then run `bin/rails server`
+* Clone the code locally 
+* Run `bin/rails db:migrate`
+* Run `bundle install --gemfile /.../events-demo-app/Gemfile`
+* Run `rails assets:precompile`
+* Run `bin/rails server`
+
+The app will be served on `http://localhost:3000/`
 
 ## Trade-offs
 
-This app was written within the 2-3hr timeframe. With more time, I would have started tackling the mentioned bonus items.
+This app was written within the 3hr timeframe. With more time, I would have started tackling the mentioned bonus items.
